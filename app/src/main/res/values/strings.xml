@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">test_task</string>
+    <string name="selected_bin_scheme">Схема: %s</string>
+    <string name="selected_bin_type">Тип: %s</string>
+    <string name="selected_bin_brand">Марка: %s</string>
+    <string name="selected_bin_prepaid_yes">Предоплата: Да</string>
+    <string name="selected_bin_prepaid_no">Предоплата: Нет</string>
+    <string name="selected_bin_country">Страна: %s</string>
+    <string name="selected_bin_name">Имя: %s</string>
+    <string name="selected_bin_url">Ссылка: %s</string>
+    <string name="selected_bin_phone">Телефон: %s</string>
+    <string name="selected_bin_city">Город: %s</string>
+</resources>
