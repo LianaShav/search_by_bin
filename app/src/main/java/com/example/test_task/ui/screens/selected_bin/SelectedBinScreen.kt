@@ -83,7 +83,7 @@ fun SelectedBinScreen(
                     )
                 }
                 Text(
-                    text = "Что-то пошло не так, проверьте BIN",
+                    text = stringResource(id = R.string.selected_bin_error),
                     color = Color.Red,
                     fontSize = 32.sp,
                     textAlign = TextAlign.Center,

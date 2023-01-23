@@ -10,4 +10,8 @@
     <string name="selected_bin_url">Ссылка: %s</string>
     <string name="selected_bin_phone">Телефон: %s</string>
     <string name="selected_bin_city">Город: %s</string>
+    <string name="selected_bin_error">Что-то пошло не так, проверьте BIN</string>
+    <string name="search_bin_enter">Введите BIN</string>
+    <string name="search_bin_enter_correct">Введите корректный BIN</string>
+    <string name="search_bin_search">Поиск</string>
 </resources>

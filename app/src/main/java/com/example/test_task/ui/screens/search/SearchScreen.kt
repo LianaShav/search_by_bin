@@ -13,6 +13,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment.Companion.CenterHorizontally
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -23,6 +24,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.example.test_task.BIN_LENGTH
 import com.example.test_task.Destinations
+import com.example.test_task.R
 import com.example.test_task.data.BinRepository
 import com.example.test_task.data.RoomDB
 import com.example.test_task.use_cases.GetBinListUseCase
@@ -94,7 +96,7 @@ fun SearchScreenSuccess(
         var text by rememberSaveable(stateSaver = TextFieldValue.Saver) {
             mutableStateOf(
                 TextFieldValue(
-                    "45717360"
+                    ""
                 )
             )
         }
@@ -114,14 +116,14 @@ fun SearchScreenSuccess(
                 isError = searchViewState.hasError,
                 placeholder = {
                     Text(
-                        text = "Введите BIN",
+                        text = stringResource(id = R.string.search_bin_enter),
                     )
                 },
             )
 
             if (searchViewState.hasError) {
                 Text(
-                    text = "Введите корректный BIN",
+                    text = stringResource(id = R.string.search_bin_enter_correct),
                     color = Color.Red,
                     modifier = Modifier
                 )
@@ -146,7 +148,7 @@ fun SearchScreenSuccess(
             onClick = {
                 action.invoke(text.text)
             }) {
-            Text(text = "Поиск")
+            Text(text = stringResource(id = R.string.search_bin_search))
         }
     }
 }
